@@ -4,63 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" href="fonts/TTLakes/stylesheet.css">
+    <link rel="stylesheet" href="fonts/TTLakes/stylesheet.css" />
     <title>Document</title>
   </head>
   <body>
-<!-- ________________HEADER____________________-->
+    <!-- ________________HEADER____________________-->
     <header class="header">
       <div class="logo-part header__logo-part">
-<button class="burger-btn"></button>
+        <button class="circle-btn burger-btn"></button>
 
-<a href="#" class="logo-link">
-  <img class="logo-img" src="/img/Group.svg" alt="">
-</a>
+        <a href="#" class="logo-link">
+          <img class="logo-img" src="/img/Group.svg" alt="CPS" />
+        </a>
       </div>
       <div class="user-panel header__user-panel">
-        <button class="contact-btn"></button>
-        <button class="chat-btn"></button>
-<button class="profile-btn"></button>
+        <button class="circle-btn contact-btn"></button>
+        <button class="circle-btn chat-btn"></button>
+        <button class="circle-btn profile-btn"></button>
       </div>
-     <div class="repair-panel header__repair-panel">
-      <button class="repair-btn"></button>
-      <button class="checkStatus-btn"></button>
-     </div>
+      <div class="repair-panel header__repair-panel">
+        <button class="circle-btn repair-btn"></button>
+        <button class="circle-btn checkStatus-btn"></button>
+      </div>
     </header>
     <!-- ________MAIN_________ -->
     <main class="main">
-        <div class="title">
-          <h1 class="title__name">Услуги и Cервисы</h1>
+      <div class="title">
+        <h1 class="title__name">Услуги и Cервисы</h1>
+        <div class="title__btns">
+          <button
+            class="circle-btn circle-btn--with-text circle-btn--with-text-1"
+          >
+            Оставить заявку
+          </button>
+          <button
+            class="circle-btn circle-btn--with-text circle-btn--with-text-2"
+          >
+            Статус ремонта
+          </button>
         </div>
+      </div>
       <nav>
         <ul class="nav">
-          <li class="nav-item nav-item--active"><a href="#">Ремонтируемые бренды</a></li>
-          <li class="nav-item"><a href="#">Дополнительные услуги</a></li>
-          <li class="nav-item"><a href="#">Цены на услуги</a></li>
-          <li class="nav-item"><a href="#">Адреса сервисных центров</a></li>
-          <li class="nav-item"><a href="#">Специальные цены</a></li>
-          <li class="nav-item"><a href="#">Отзывы</a></li>
+          <li class="nav__item nav__item--active">
+            <a href="#">Ремонтируемые бренды</a>
+          </li>
+          <li class="nav__item"><a href="#">Дополнительные услуги</a></li>
+          <li class="nav__item"><a href="#">Ремонтируемые устройства</a></li>
+          <li class="nav__item"><a href="#">Цены на услуги</a></li>
+          <li class="nav__item"><a href="#">Адреса сервисных центров</a></li>
+          <li class="nav__item"><a href="#">Специальные цены</a></li>
+          <li class="nav__item"><a href="#">Отзывы</a></li>
         </ul>
       </nav>
       <section class="about">
-        <div class="text-content about__text-content">
-          <p class="about__text-1">
-            Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-            Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
-            гарантией производителя.
-            <p class="about__text-2">Мы успешно работаем с 1992 года и заслужили
-              репутацию надежного партнера, что подтверждает большое количество
-              постоянных клиентов. Мы гордимся тем, что к нам обращаются по
-              рекомендациям и, в свою очередь, советуют нас родным и близким.  </p>
-          </p>
+        <div class="about-content about__about-content">
+          <div class="text-content about__text-content">
+            <p class="about__text-1">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            <p class="about__text-2">
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера, что подтверждает большое количество постоянных клиентов.
+              Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.
+            </p>
+          </div>
           <button class="read-more about__read-more">Читать далее</button>
         </div>
-       <div class="about__image">
-        <img src="/img/Picture Copy.png" alt="CPS" class="about__image-cps">
-
-       </div> 
+        <div class="about__image">
+          <img src="/img/Picture Copy.png" alt="CPS" class="about__image-cps" />
+        </div>
       </section>
     </main>
-    
   </body>
 </html>
