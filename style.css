@@ -45,11 +45,11 @@ header {
   align-items: center;
 }
 .burger-btn {
-  background: url(/img/burger.svg);
+  background: url(./img/burger.svg);
 }
 .logo-img {
   padding-left: 20px;
-  background: url(/img/divider.svg) no-repeat left 50%;
+  background: url(./img/divider.svg) no-repeat left 50%;
 }
 .user-panel {
   display: flex;
@@ -61,20 +61,20 @@ header {
   margin-left: auto;
 }
 .contact-btn {
-  background: url(/img/call.svg);
+  background: url(./img/call.svg);
 }
 .chat-btn {
-  background: url(/img/chat.svg);
+  background: url(./img/chat.svg);
 }
 .profile-btn {
-  background: url(/img/profile.svg);
+  background: url(./img/profile.svg);
 }
 
 .header__repair-panel::before {
   content: '';
   height: 100%;
   width: 8px;
-  background: url(/img/divider.svg) no-repeat left 50%;
+  background: url(./img/divider.svg) no-repeat left 50%;
 }
 
 .header__repair-panel {
@@ -86,10 +86,10 @@ header {
   align-items: center;
 }
 .repair-btn {
-  background: url(/img/repair.svg);
+  background: url(./img/repair.svg);
 }
 .checkStatus-btn {
-  background: url(/img/checkstatus.svg);
+  background: url(./img/checkstatus.svg);
 }
 
 /* MAIN */
@@ -100,12 +100,10 @@ header {
 }
 .title {
   display: flex;
-  background: url(/img/highlight.svg) left 50% no-repeat;
+  background: url(./img/highlight.svg) left 50% no-repeat;
   justify-content: space-between;
 }
-.title__btns {
-  background: url(images/repair.svg) no-repeat center center;
-}
+
 .title__name {
   color: #1b1c21;
   padding-left: 20px;
@@ -132,10 +130,10 @@ h1 {
   width: 168px;
 }
 .circle-btn--with-text-1 {
-  background: url(img/repair.svg) no-repeat center center;
+  background: url(./img/repair.svg) no-repeat center center;
 }
 .circle-btn--with-text-2 {
-  background: url(/img/checkstatus.svg) no-repeat center center;
+  background: url(./img/checkstatus.svg) no-repeat center center;
 }
 .nav {
   display: flex;
@@ -178,7 +176,7 @@ h1 {
 }
 
 .read-more {
-  background: url(/img/expand.svg) no-repeat left;
+  background: url(./img/expand.svg) no-repeat left;
   padding-left: 30px;
   color: #1b1c21;
   font-size: 16px;
