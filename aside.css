@@ -101,16 +101,10 @@ a {
   line-height: 24px;
 }
 
-.ul2 {
-  display: flex;
-  gap: 10px;
-  padding-bottom: 8px;
-}
-
 .footer__menu {
   padding-top: 275px;
 }
-.contacts1 {
+.footer__contacts-1 {
   display: flex;
   gap: 16px;
   padding-bottom: 16px;
@@ -126,7 +120,7 @@ a {
   background: url(./img/profile.svg);
 }
 /* dwq? */
-.contacts {
+.footer__contacts-2 {
   display: flex;
   flex-direction: column;
 }
@@ -141,7 +135,12 @@ a {
   letter-spacing: -0.6px;
   font-family: TT Lakes-Bold, sans-serif;
 }
-.ul2__link--active {
+.footer__lang-menu {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 8px;
+}
+.lang-menu__link--active {
   color: #7e7e82;
   pointer-events: none;
 }
