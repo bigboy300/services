@@ -1,0 +1,21 @@
+li {
+  list-style: none;
+}
+.circle-btn {
+  all: unset;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  width: 40px;
+  height: 40px;
+}
+.closeBurger {
+  background: url(img/close.svg);
+}
+.searchBtn {
+  background: url(img/search.svg);
+}

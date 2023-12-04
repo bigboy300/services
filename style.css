@@ -31,64 +31,59 @@ body {
 /* __________HEADER _______________*/
 header {
   display: flex;
-
+  background-color: #fff;
   min-height: 88px;
   justify-content: space-between;
   border-bottom: 2px solid #d9fff5;
 }
+
 .header__logo-part {
-  margin-left: 24px;
-}
-.logo-part {
   display: flex;
-  gap: 16px;
+
   align-items: center;
 }
-.burger-btn {
+.circle-btn--burger {
   background: url(./img/burger.svg);
 }
-.logo-img {
-  padding-left: 20px;
-  background: url(./img/divider.svg) no-repeat left 50%;
+
+.header__wrapper {
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 8px;
 }
-.user-panel {
+.header__user-panel {
   display: flex;
   gap: 16px;
   align-items: center;
   margin-right: 20px;
 }
-.header__user-panel {
-  margin-left: auto;
-}
-.contact-btn {
+
+.circle-btn--contact {
   background: url(./img/call.svg);
 }
-.chat-btn {
+.circle-btn--chat {
   background: url(./img/chat.svg);
 }
-.profile-btn {
+.circle-btn--profile {
   background: url(./img/profile.svg);
 }
 
 .header__repair-panel::before {
   content: '';
   height: 100%;
-  width: 8px;
+  width: 2px;
   background: url(./img/divider.svg) no-repeat left 50%;
 }
 
-.header__repair-panel {
-  margin-right: 24px;
-}
 .repair-panel {
   display: flex;
   gap: 16px;
   align-items: center;
 }
-.repair-btn {
+.circle-btn--repair {
   background: url(./img/repair.svg);
 }
-.checkStatus-btn {
+.circle-btn--checkStatus {
   background: url(./img/checkstatus.svg);
 }
 
@@ -147,7 +142,7 @@ h1 {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  padding: 10px;
+
   min-width: fit-content;
 }
 .nav__item--active {
@@ -156,6 +151,11 @@ h1 {
 }
 .nav__item:hover {
   color: black;
+}
+.nav__link {
+  display: block;
+  padding: 8px 9px 8px 16px;
+  min-width: fit-content;
 }
 /*_______ABOUT___________ */
 
@@ -177,18 +177,28 @@ h1 {
 
 .read-more {
   background: url(./img/expand.svg) no-repeat left;
-  padding-left: 30px;
+  padding: 0;
   color: #1b1c21;
   font-size: 16px;
   border: none;
   font-weight: 600;
   line-height: 24px;
   cursor: pointer;
-  margin-top: 10px;
+
   font-family: TT Lakes;
+}
+.about__read-more {
+  margin-top: 10px;
+  padding-left: 30px;
 }
 /* _______320px_________ */
 @media (max-width: 768px) {
+  .header {
+    margin: 0 30px 0 16px;
+  }
+  .header__logo-part {
+    gap: 18px;
+  }
   .logo-img {
     background: none;
     padding: 0;
@@ -218,7 +228,7 @@ h1 {
     display: none;
   }
   .about__image-cps {
-    max-width: 320px;
+    width: 100%;
     padding-top: 20px;
     max-height: 250px;
   }
@@ -226,6 +236,20 @@ h1 {
 
 /* ________768px_________ */
 @media (min-width: 768px) {
+  .header {
+    margin: 0 35px 0 24px;
+  }
+  .circle-btn--burger::before {
+    position: relative;
+    display: block;
+    content: '';
+    height: 32px;
+    width: 2.5px;
+    background-color: #eaeaea;
+    left: 61px;
+    top: 1px;
+    cursor: default;
+  }
   .title__btns {
     display: none;
   }
@@ -251,6 +275,7 @@ h1 {
     padding: 20px 40px 14px 40px;
   }
 }
+
 /* __________1120px_________ */
 @media (min-width: 1120px) {
   .header {

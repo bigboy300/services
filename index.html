@@ -11,20 +11,23 @@
     <!-- ________________HEADER____________________-->
     <header class="header">
       <div class="logo-part header__logo-part">
-        <button class="circle-btn burger-btn"></button>
+        <button class="circle-btn circle-btn--burger"></button>
 
         <a href="#" class="logo-link">
           <img class="logo-img" src="./img/Group.svg" alt="CPS" />
         </a>
       </div>
-      <div class="user-panel header__user-panel">
-        <button class="circle-btn contact-btn"></button>
-        <button class="circle-btn chat-btn"></button>
-        <button class="circle-btn profile-btn"></button>
-      </div>
-      <div class="repair-panel header__repair-panel">
-        <button class="circle-btn repair-btn"></button>
-        <button class="circle-btn checkStatus-btn"></button>
+      <div class="header__wrapper">
+        <div class="user-panel header__user-panel">
+          <button class="circle-btn circle-btn--contact"></button>
+          <button class="circle-btn circle-btn--chat"></button>
+          <button class="circle-btn circle-btn--profile"></button>
+        </div>
+
+        <div class="repair-panel header__repair-panel">
+          <button class="circle-btn circle-btn--repair"></button>
+          <button class="circle-btn circle-btn--checkStatus"></button>
+        </div>
       </div>
     </header>
     <!-- ________MAIN_________ -->
@@ -47,14 +50,24 @@
       <nav>
         <ul class="nav">
           <li class="nav__item nav__item--active">
-            <a href="#">Ремонтируемые бренды</a>
+            <a href="#" class="nav__link">Ремонтируемые бренды</a>
           </li>
-          <li class="nav__item"><a href="#">Дополнительные услуги</a></li>
-          <li class="nav__item"><a href="#">Ремонтируемые устройства</a></li>
-          <li class="nav__item"><a href="#">Цены на услуги</a></li>
-          <li class="nav__item"><a href="#">Адреса сервисных центров</a></li>
-          <li class="nav__item"><a href="#">Специальные цены</a></li>
-          <li class="nav__item"><a href="#">Отзывы</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Дополнительные услуги</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Ремонтируемые устройства</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Цены на услуги</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Адреса сервисных центров</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Специальные цены</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
         </ul>
       </nav>
       <section class="about">
