@@ -1,5 +1,17 @@
+html {
+  box-sizing: border-box;
+  font-family: 'TT Lakes', 'Open Sans', 'Arial', sans-serif;
+}
 li {
   list-style: none;
+}
+a {
+  text-decoration: none;
+}
+aside {
+  width: 320px;
+  height: 1024px;
+  background-color: rgb(150, 165, 157);
 }
 .circle-btn {
   all: unset;
@@ -18,4 +30,16 @@ li {
 }
 .searchBtn {
   background: url(img/search.svg);
+}
+.circle-btn--contact {
+  background: url(./img/call.svg);
+}
+.circle-btn--chat {
+  background: url(./img/chat.svg);
+}
+.circle-btn--chat {
+  background: url(./img/chat.svg);
+}
+.circle-btn--profile {
+  background: url(./img/profile.svg);
 }

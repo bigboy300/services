@@ -239,6 +239,9 @@ h1 {
   .header {
     margin: 0 35px 0 24px;
   }
+  .header__logo-part {
+    gap: 40px;
+  }
   .circle-btn--burger::before {
     position: relative;
     display: block;
