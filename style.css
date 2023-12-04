@@ -49,13 +49,12 @@ header {
 .header__wrapper {
   display: inline-flex;
   justify-content: space-between;
-  gap: 8px;
+  gap: 29px;
 }
 .header__user-panel {
   display: flex;
   gap: 16px;
   align-items: center;
-  margin-right: 20px;
 }
 
 .circle-btn--contact {

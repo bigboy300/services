@@ -1,17 +1,49 @@
 html {
-  box-sizing: border-box;
   font-family: 'TT Lakes', 'Open Sans', 'Arial', sans-serif;
 }
+@font-face {
+  font-family: 'TT Lakes-Bold';
+  src: url('/fonts/TTLakes/TTLakes-Bold.woff');
+}
+
+@font-face {
+  font-family: 'TT Lakes-Medium';
+  src: url(/fonts/TTLakes/TTLakesCompressed-Medium.woff);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 li {
   list-style: none;
 }
 a {
   text-decoration: none;
 }
-aside {
+.mobile-menu {
+  padding: 0.1px 0 0 24px;
+
   width: 320px;
-  height: 1024px;
+  max-height: 1024px;
+  min-height: 100vh;
   background-color: rgb(150, 165, 157);
+  background: #fff;
+
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+.header__logo--link {
+  margin-right: auto;
+}
+.header__mobile-menu {
+  width: 272px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+  gap: 16px;
 }
 .circle-btn {
   all: unset;
@@ -19,17 +51,69 @@ aside {
   border: none;
   font: inherit;
   color: inherit;
-  background-color: transparent;
+
   cursor: pointer;
   outline: none;
   width: 40px;
   height: 40px;
 }
-.closeBurger {
+.circle-btn:hover {
+  filter: invert(100%);
+  transition: 1s;
+}
+.close-burger {
   background: url(img/close.svg);
 }
-.searchBtn {
+.search-btn {
   background: url(img/search.svg);
+}
+.nav__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.nav__item--active {
+  margin-top: 40px;
+  background: url(./img/highlight2.svg) left 50% no-repeat;
+  transform: translate(-24px);
+  padding: 8px 25px;
+}
+.link {
+  color: #1b1c21;
+
+  font-size: 16px;
+
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+.link:hover {
+  color: #ff3e79;
+  transition: 0.3s;
+}
+
+.nav__link--active {
+  color: #7e7e82;
+
+  font-size: 16px;
+  pointer-events: none;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.ul2 {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 8px;
+}
+
+.footer__menu {
+  padding-top: 275px;
+}
+.contacts1 {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 16px;
 }
 .circle-btn--contact {
   background: url(./img/call.svg);
@@ -37,9 +121,27 @@ aside {
 .circle-btn--chat {
   background: url(./img/chat.svg);
 }
-.circle-btn--chat {
-  background: url(./img/chat.svg);
-}
+
 .circle-btn--profile {
   background: url(./img/profile.svg);
+}
+/* dwq? */
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+.mail__link {
+  padding-bottom: 12px;
+}
+.number__link {
+  font-size: 24px;
+  padding-bottom: 40px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  font-family: TT Lakes-Bold, sans-serif;
+}
+.ul2__link--active {
+  color: #7e7e82;
+  pointer-events: none;
 }
