@@ -47,7 +47,7 @@ header {
   align-items: center;
 }
 .circle-btn--burger {
-  background: url(/img/burger.svg);
+  background: url(../img/burger.svg);
 }
 
 .header__wrapper {
@@ -62,20 +62,20 @@ header {
 }
 
 .circle-btn--contact {
-  background: url(/img/call.svg);
+  background: url(../img/call.svg);
 }
 .circle-btn--chat {
-  background: url(/img/chat.svg);
+  background: url(../img/chat.svg);
 }
 .circle-btn--profile {
-  background: url(/img/profile.svg);
+  background: url(../img/profile.svg);
 }
 
 .header__repair-panel::before {
   content: '';
   height: 100%;
   width: 2px;
-  background: url(/img/divider.svg) no-repeat left 50%;
+  background: url(../img/divider.svg) no-repeat left 50%;
 }
 
 .repair-panel {
@@ -84,10 +84,10 @@ header {
   align-items: center;
 }
 .circle-btn--repair {
-  background: url(/img/repair.svg);
+  background: url(../img/repair.svg);
 }
 .circle-btn--checkStatus {
-  background: url(/img/checkstatus.svg);
+  background: url(../img/checkstatus.svg);
 }
 
 /* MAIN */
@@ -98,7 +98,7 @@ header {
 }
 .title {
   display: flex;
-  background: url(/img/highlight.svg) left 50% no-repeat;
+  background: url(../img/highlight.svg) left 50% no-repeat;
   justify-content: space-between;
   padding-top: 42px;
 }
@@ -129,10 +129,10 @@ h1 {
   width: 168px;
 }
 .circle-btn--with-text-1 {
-  background: url(/img/repair.svg) no-repeat center center;
+  background: url(../img/repair.svg) no-repeat center center;
 }
 .circle-btn--with-text-2 {
-  background: url(/img/checkstatus.svg) no-repeat center center;
+  background: url(../img/checkstatus.svg) no-repeat center center;
 }
 .nav {
   display: flex;
@@ -180,7 +180,7 @@ h1 {
 }
 
 .read-more {
-  background: url(/img/expand.svg) no-repeat left;
+  background: url(../img/expand.svg) no-repeat left;
   padding: 0;
   color: #1b1c21;
   font-size: 16px;

@@ -61,10 +61,10 @@ a {
   filter: invert(100%);
 }
 .close-burger {
-  background: url(/img/close.svg);
+  background: url(../img/close.svg);
 }
 .search-btn {
-  background: url(/img/search.svg);
+  background: url(../img/search.svg);
 }
 .nav__menu {
   display: flex;
@@ -74,7 +74,7 @@ a {
 }
 
 .nav__item--active::before {
-  content: url(/img/highlight2.svg);
+  content: url(../img/highlight2.svg);
   position: absolute;
   top: 93px;
   left: 0px;
@@ -109,14 +109,14 @@ a {
   padding-bottom: 16px;
 }
 .circle-btn--contact {
-  background: url(/img/call.svg);
+  background: url(../img/call.svg);
 }
 .circle-btn--chat {
-  background: url(/img/chat.svg);
+  background: url(../img/chat.svg);
 }
 
 .circle-btn--profile {
-  background: url(/img/profile.svg);
+  background: url(../img/profile.svg);
 }
 /* dwq? */
 .footer__contacts-2 {
