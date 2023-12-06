@@ -27,7 +27,7 @@ a {
 
   width: 320px;
   max-height: 1024px;
-  min-height: 100vh;
+  height: 100vh;
   background-color: rgb(150, 165, 157);
   background: #fff;
 
@@ -51,7 +51,7 @@ a {
   border: none;
   font: inherit;
   color: inherit;
-
+  transition: filter 1s ease-in-out;
   cursor: pointer;
   outline: none;
   width: 40px;
@@ -59,25 +59,27 @@ a {
 }
 .circle-btn:hover {
   filter: invert(100%);
-  transition: 1s;
 }
 .close-burger {
-  background: url(img/close.svg);
+  background: url(/img/close.svg);
 }
 .search-btn {
-  background: url(img/search.svg);
+  background: url(/img/search.svg);
 }
 .nav__menu {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
+  padding: 20px 0 60px 0px;
 }
-.nav__item--active {
-  margin-top: 40px;
-  background: url(./img/highlight2.svg) left 50% no-repeat;
-  transform: translate(-24px);
-  padding: 8px 25px;
+
+.nav__item--active::before {
+  content: url(/img/highlight2.svg);
+  position: absolute;
+  top: 93px;
+  left: 0px;
 }
+
 .link {
   color: #1b1c21;
 
@@ -92,7 +94,7 @@ a {
   transition: 0.3s;
 }
 
-.nav__link--active {
+.nav__item--active {
   color: #7e7e82;
 
   font-size: 16px;
@@ -101,23 +103,20 @@ a {
   line-height: 24px;
 }
 
-.footer__menu {
-  padding-top: 275px;
-}
 .footer__contacts-1 {
   display: flex;
   gap: 16px;
   padding-bottom: 16px;
 }
 .circle-btn--contact {
-  background: url(./img/call.svg);
+  background: url(/img/call.svg);
 }
 .circle-btn--chat {
-  background: url(./img/chat.svg);
+  background: url(/img/chat.svg);
 }
 
 .circle-btn--profile {
-  background: url(./img/profile.svg);
+  background: url(/img/profile.svg);
 }
 /* dwq? */
 .footer__contacts-2 {
@@ -129,7 +128,7 @@ a {
 }
 .number__link {
   font-size: 24px;
-  padding-bottom: 40px;
+
   font-weight: 700;
   line-height: 32px;
   letter-spacing: -0.6px;
@@ -142,5 +141,14 @@ a {
 }
 .lang-menu__link--active {
   color: #7e7e82;
-  pointer-events: none;
+  font-weight: 500;
 }
+@media (max-width: 360px) {
+  .nav__menu {
+    gap: 23px;
+    margin: 0;
+  }
+}
+/* .nav__item--active - эти стили лучше переделать: верхний отступ перенести в nav__menu и сделать внутренним, иконку можно добавить через псевдоэлемент, остальные можно убрать
+
+.nav__link--active, lang-menu__link--active - если эти элементы не ссылки, то можно просто стилизовать текст через родительский модификатор или в <span> обернуть, а не в <a> */

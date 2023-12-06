@@ -1,0 +1,19 @@
+.group1,
+.group2 {
+  display: flex;
+  width: 500px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.block1 {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border: 1px solid black;
+}
+.block2 {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(0, 255, 145);
+}
