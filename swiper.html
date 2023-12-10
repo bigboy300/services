@@ -3,24 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/styles/swiper.css" />
     <title>Document</title>
   </head>
   <body>
+    <h1>Ремонт техники различных брендов</h1>
     <div class="container">
-      <h1>Ремонт техники различных брендов</h1>
-      <div class="group1">
-        <div class="block1"></div>
-        <div class="block1"></div>
-        <div class="block1"></div>
-        <div class="block1"></div>
-        <div class="block2"></div>
-        <div class="block2"><img src="./img/swiper/Samsung.svg" alt="" /></div>
-        <div class="block2"><img src="./img/swiper/Sony.svg" alt="" /></div>
-        <div class="block2"><img src="./img/swiper/Lenovo.svg" alt="" /></div>
+      <div class="block main">
+        <a href="#"> 1<img src="./img/swiper/Lenovo.svg" width="100px" /> </a>
       </div>
-      <div class="group2"></div>
+      <div class="block main">
+        <a href="#"> 2<img src="./img/swiper/Samsung.svg" width="100px" /> </a>
+      </div>
+      <div class="block main">
+        <a href="#"> 3<img src="./img/swiper/Apple.svg" /> </a>
+      </div>
+      <div class="block main">
+        <a href="#">
+          4<img src="./img/swiper/ViewSonic.svg" width="100px" />
+        </a>
+      </div>
+      <div class="block main">
+        5
+        <a href="#">
+          <img src="./img/swiper/Bosch.svg" />
+        </a>
+      </div>
+      <div class="block main">
+        <a href="#"> 6 <img src="./img/swiper/HP.svg" /> </a>
+      </div>
+
+      <div class="block7 block">
+        7
+        <a href="#">
+          <img src="./img/swiper/Acer.svg" width="100px" />
+        </a>
+      </div>
+      <div class="block8 block">
+        <a href="#"> 8<img src="./img/swiper/Sony.svg " width="100px" /> </a>
+      </div>
+
+      <div class="block block9">
+        <a href="#"> 9<img src="./img/swiper/Lenovo.svg" width="100px" /> </a>
+      </div>
+      <div class="block block10">
+        <a href="#"> 10<img src="./img/swiper/Samsung.svg" width="100px" /> </a>
+      </div>
+      <div class="block block11">11<img src="./img/swiper/Apple.svg" /></div>
+    </div>
+    <div class="swiper"></div>
+    <button id="toggleButton">показать всё</button>
+
+    <!--_________________SWIPER_____________________ -->
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/swiper/Acer.svg" alt="qwe" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/swiper/Acer.svg" alt="qwe" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/swiper/Acer.svg" alt="qwe" />
+        </div>
+        ...
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
     <script src="swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
