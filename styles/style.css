@@ -53,7 +53,7 @@ header {
 .header__wrapper {
   display: inline-flex;
   justify-content: space-between;
-  gap: 29px;
+  gap: 21px;
 }
 .header__user-panel {
   display: flex;
@@ -80,7 +80,7 @@ header {
 
 .repair-panel {
   display: flex;
-  gap: 16px;
+  gap: 21px;
   align-items: center;
 }
 .circle-btn--repair {
@@ -98,14 +98,15 @@ header {
 }
 .title {
   display: flex;
-  background: url(../img/highlight.svg) left 50% no-repeat;
+  background: url(../img/highlight.svg) left 44% no-repeat;
   justify-content: space-between;
-  padding-top: 42px;
+  padding-top: 22px;
+  padding-bottom: 31px;
 }
 
 .title__name {
   color: #1b1c21;
-  padding-left: 20px;
+  padding-left: 24px;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -139,6 +140,7 @@ h1 {
   overflow-x: scroll;
   flex-wrap: nowrap;
   justify-content: space-between;
+  margin: 0;
 }
 .nav__item {
   color: #7e7e82;
@@ -173,6 +175,9 @@ h1 {
   font-style: normal;
   line-height: 20px;
 }
+.about__about-content {
+  padding: 0px 0px 0px 24px;
+}
 .text-content {
   font-size: 14px;
   display: flex;
@@ -198,7 +203,7 @@ h1 {
 /* _______320px_________ */
 @media (max-width: 768px) {
   .header {
-    padding: 0 15px 27px 16px;
+    padding: 0 15px 0px 16px;
   }
   .header__logo-part {
     gap: 18px;
@@ -210,7 +215,14 @@ h1 {
   .user-panel {
     display: none;
   }
-
+  .title {
+    padding-top: 0;
+    padding-bottom: 20px;
+    background: url(../img/highlight.svg) left 50% no-repeat;
+  }
+  .title__name {
+    padding: 21px 1px 1px 16px;
+  }
   .title__btns {
     display: none;
   }
@@ -228,6 +240,9 @@ h1 {
   .about__text-2 {
     display: none;
   }
+  .about__text-content {
+    padding-top: 10px;
+  }
   .about__image-cps {
     width: 100%;
     padding-top: 20px;
@@ -238,34 +253,32 @@ h1 {
 /* ________768px_________ */
 @media (min-width: 768px) {
   .header {
-    padding: 0 35px 0 24px;
+    padding: 0 35px 0 0px;
   }
   .header__logo-part {
-    gap: 40px;
+    gap: 30px;
   }
-  .circle-btn--burger::before {
+  .logo-part::before {
     position: relative;
     display: block;
     content: '';
     height: 32px;
     width: 2.5px;
     background-color: #eaeaea;
-    left: 61px;
-    top: 1px;
-    cursor: default;
+    left: 87px;
+    top: -2px;
   }
   .title__btns {
     display: none;
   }
   .nav {
     padding-left: 24px;
+    flex-wrap: wrap;
+    overflow-x: visible;
+    justify-content: start;
   }
   .about {
     display: flex;
-  }
-  .about-content {
-    padding-top: 10px;
-    padding-left: 16px;
   }
 
   .about__text-content {
