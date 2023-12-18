@@ -8,89 +8,153 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./styles/swiper.css" />
+    <link rel="stylesheet" href="fonts/TTLakes/stylesheet.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>Ремонт техники различных брендов</h1>
+    <header class="header">
+      <h1 class="title">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h1>
+    </header>
     <div class="container">
-      <div class="block main">
-        <a href="#"> 1<img src="./img/swiper/Lenovo.svg" width="100px" /> </a>
-      </div>
-      <div class="block main">
-        <a href="#"> 2<img src="./img/swiper/Samsung.svg" width="100px" /> </a>
-      </div>
-      <div class="block main">
-        <a href="#"> 3<img src="./img/swiper/Apple.svg" /> </a>
-      </div>
-      <div class="block main">
-        <a href="#">
-          4<img src="./img/swiper/ViewSonic.svg" width="100px" />
+      <div class="block">
+        <a href="#" class="block__link">
+          <img src="./img/swiper/Lenovo.svg" class="brend__img" />
+          <div class="circle-btn circle-btn--show-more"></div>
         </a>
       </div>
-      <div class="block main">
-        5
-        <a href="#">
-          <img src="./img/swiper/Bosch.svg" />
+      <div class="block">
+        <a href="#" class="block__link">
+          <img src="./img/swiper/Samsung.svg" class="brend__img" />
+          <div class="circle-btn circle-btn--show-more"></div>
         </a>
       </div>
-      <div class="block main">
-        <a href="#"> 6 <img src="./img/swiper/HP.svg" /> </a>
+      <div class="block">
+        <a href="#" class="block__link">
+          <img src="./img/swiper/Apple.svg" class="brend__img" />
+          <div class="circle-btn circle-btn--show-more"></div>
+        </a>
+      </div>
+      <div class="block">
+        <a href="#" class="block__link">
+          <img src="./img/swiper/ViewSonic.svg" class="brend__img" />
+          <div class="circle-btn circle-btn--show-more"></div>
+        </a>
+      </div>
+      <div class="block">
+        <a href="#" class="block__link">
+          <img src="./img/swiper/Bosch.svg" class="brend__img" />
+          <div class="circle-btn circle-btn--show-more"></div>
+        </a>
+      </div>
+      <div class="block">
+        <a href="#" class="block__link">
+          <img src="./img/swiper/HP.svg" class="brend__img" />
+          <div class="circle-btn circle-btn--show-more"></div>
+        </a>
       </div>
 
-      <div class="block7 block">
-        7
-        <a href="#">
-          <img src="./img/swiper/Acer.svg" width="100px" />
+      <div class="block">
+        <a href="#" class="block__link">
+          <img src="./img/swiper/Acer.svg" class="brend__img" />
+
+          <div class="circle-btn circle-btn--show-more"></div>
         </a>
       </div>
-      <div class="block8 block">
-        <a href="#"> 8<img src="./img/swiper/Sony.svg " width="100px" /> </a>
+      <div class="block">
+        <a href="#" class="block__link">
+          <img src="./img/swiper/Sony.svg " class="brend__img" />
+          <div class="circle-btn circle-btn--show-more"></div>
+        </a>
       </div>
 
-      <div class="block block9">
-        <a href="#"> 9<img src="./img/swiper/Lenovo.svg" width="100px" /> </a>
+      <div class="block">
+        <a href="#" class="block__link">
+          <img src="./img/swiper/Lenovo.svg" class="brend__img" />
+          <div class="circle-btn circle-btn--show-more"></div>
+        </a>
       </div>
-      <div class="block block10">
-        <a href="#"> 10<img src="./img/swiper/Samsung.svg" width="100px" /> </a>
+      <div class="block">
+        <a href="#" class="block__link">
+          <img src="./img/swiper/Samsung.svg" class="brend__img" />
+          <div class="circle-btn circle-btn--show-more"></div>
+        </a>
       </div>
-      <div class="block block11">11<img src="./img/swiper/Apple.svg" /></div>
+      <div class="block">
+        <a href="#" class="block__link">
+          <img src="./img/swiper/Apple.svg" class="brend__img" />
+          <div class="circle-btn circle-btn--show-more"></div>
+        </a>
+      </div>
     </div>
-    <div class="swiper"></div>
-    <button id="toggleButton">показать всё</button>
+
+    <button class="read-more about__read-more" id="toggleButton">
+      Показать всё
+    </button>
 
     <!--_________________SWIPER_____________________ -->
 
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./img/swiper/Lenovo.svg" alt="qwe" />
+        <div class="block swiper-slide">
+          <a href="#" class="block__link">
+            <img
+              class="brend__img"
+              src="./img/swiper/Lenovo.svg"
+              alt="Lenovo"
+            />
+            <div
+              class="circle-btn circle-btn--show-more swiper__circle-btn--show-more"
+            ></div>
+          </a>
+        </div>
+        <div class="block swiper-slide">
+          <a href="#" class="block__link"
+            ><img class="brend__img" src="./img/swiper/Samsung.svg" alt="qwe" />
+            <div class="circle-btn circle-btn--show-more"></div>
+          </a>
+        </div>
+        <div class="block swiper-slide">
+          <a href="#" class="block__link">
+            <img src="./img/swiper/Apple.svg" alt="qwe" />
+            <div class="circle-btn circle-btn--show-more"></div>
+          </a>
         </div>
         <div class="swiper-slide">
-          <img src="./img/swiper/Samsung.svg" alt="qwe" />
+          <a href="#" class="block__link">
+            <img src="./img/swiper/ViewSonic.svg" alt="qwe" />
+            <div class="circle-btn circle-btn--show-more"></div>
+          </a>
         </div>
         <div class="swiper-slide">
-          <img src="./img/swiper/Apple.svg" alt="qwe" />
+          <a href="#" class="block__link">
+            <img src="./img/swiper/Bosch.svg" alt="qwe" />
+            <div class="circle-btn circle-btn--show-more"></div>
+          </a>
         </div>
         <div class="swiper-slide">
-          <img src="./img/swiper/ViewSonic.svg" alt="qwe" />
+          <a href="#" class="block__link">
+            <img src="./img/swiper/HP.svg" alt="qwe" />
+            <div class="circle-btn circle-btn--show-more"></div>
+          </a>
         </div>
         <div class="swiper-slide">
-          <img src="./img/swiper/Bosch.svg" alt="qwe" />
+          <a href="#" class="block__link">
+            <img src="./img/swiper/Acer.svg" alt="qwe" />
+            <div class="circle-btn circle-btn--show-more"></div>
+          </a>
         </div>
         <div class="swiper-slide">
-          <img src="./img/swiper/HP.svg" alt="qwe" />
+          <a href="#" class="block__link">
+            <img src="./img/swiper/Sony.svg" alt="qwe" />
+            <div class="circle-btn circle-btn--show-more"></div>
+          </a>
         </div>
         <div class="swiper-slide">
-          <img src="./img/swiper/Acer.svg" alt="qwe" />
+          <a href="#" class="block__link">
+            <img src="./img/swiper/Lenovo.svg" alt="qwe" />
+            <div class="circle-btn circle-btn--show-more"></div>
+          </a>
         </div>
-        <div class="swiper-slide">
-          <img src="./img/swiper/Sony.svg" alt="qwe" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/swiper/Lenovo.svg" alt="qwe" />
-        </div>
-
-        ...
       </div>
 
       <div class="swiper-pagination"></div>

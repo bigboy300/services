@@ -18,7 +18,7 @@ if (window.innerWidth < 1120) {
       isElementVisible = false
     } else {
       lastFiveContainers.forEach((el) => {
-        el.style.display = 'flex'
+        el.style.display = 'block'
       })
       toggleButton.textContent = 'Скрыть'
       isElementVisible = true
@@ -35,7 +35,7 @@ if (window.innerWidth > 1120) {
       isElementVisible = false
     } else {
       lastThreeContainers.forEach((el) => {
-        el.style.display = 'flex'
+        el.style.display = 'block'
       })
       toggleButton.textContent = 'Скрыть'
       isElementVisible = true
@@ -52,7 +52,13 @@ const swiper = new Swiper('.mySwiper', {
   effect: 'slider',
   // initialSlide: 2, // Начинаем со 2 слайдера
   // freeMode: true, // можно перетаскивать как ленту
-  slidesPerView: 3, // кол-во активных слайдов
+  slidesPerView: 2,
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 3,
+    },
+  }, // кол-во активных слайдов
   // centeredSlides: true, // центрирование слайдов
 
   //                 Пагинация (точки)
@@ -66,6 +72,7 @@ const swiper = new Swiper('.mySwiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  spaceBetween: 16,
 
   //  Автоматическое перелистывание
   // autoplay: {
