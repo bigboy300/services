@@ -58,7 +58,8 @@ const swiper = new Swiper('.mySwiper', {
     320: {
       slidesPerView: 3,
     },
-  }, // кол-во активных слайдов
+  },
+  // кол-во активных слайдов
   // centeredSlides: true, // центрирование слайдов
 
   //                 Пагинация (точки)
