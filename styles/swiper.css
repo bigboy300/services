@@ -7,13 +7,7 @@
 html {
   background-color: #f8f8f8;
 }
-.swiper-pagination-bullet-active {
-  background-color: #ae9999 !important;
-}
-.swiper-pagination-bullets {
-  margin-top: 16px;
-  position: static;
-}
+
 .header {
   background: linear-gradient(to right, #f8f8f8 0%, #fff 98.61%);
   height: 56px;
@@ -23,7 +17,7 @@ html {
 .title {
   padding-left: 32px;
   color: #7e7e82;
-  font-family: TT Lakes;
+  font-family: inherit;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -89,16 +83,45 @@ html {
   line-height: 24px;
   cursor: pointer;
 
-  font-family: TT Lakes;
+  font-family: inherit;
+}
+.read-more--close {
+  background: url(../img/expand-close.svg) no-repeat left;
 }
 .about__read-more {
   padding-left: 30px;
   margin-left: 31px;
   margin-top: 24px;
 }
+/* ______________________Swiper___________________ */
 .swiper {
   display: none;
   padding-top: 24px;
+}
+.swiper-wrapper {
+  padding-left: 16px;
+}
+.swiper::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 24px;
+
+  background: linear-gradient(
+    270deg,
+    #f8f8f8 16.84%,
+    rgba(248, 248, 248, 0) 100%
+  );
+  z-index: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ae9999 !important;
+}
+.swiper-pagination-bullets {
+  margin-top: 16px;
+  position: static;
 }
 .brend__img {
   margin-left: 16px;
@@ -115,8 +138,8 @@ html {
     display: block;
   }
   .swiper-slide {
-    width: 240px !important;
-    background-color: rgb(255, 255, 255);
+    width: 240px;
+    background-color: rgb(255, 25 5, 255);
   }
 }
 /* __________1120px_________ */

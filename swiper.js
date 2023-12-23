@@ -15,12 +15,15 @@ if (window.innerWidth < 1120) {
         el.style.display = 'none'
       })
       toggleButton.textContent = 'Показать всё'
+      toggleButton.classList.remove('read-more--close')
+
       isElementVisible = false
     } else {
       lastFiveContainers.forEach((el) => {
         el.style.display = 'block'
       })
       toggleButton.textContent = 'Скрыть'
+      toggleButton.classList.add('read-more--close')
       isElementVisible = true
     }
   })
@@ -32,12 +35,14 @@ if (window.innerWidth > 1120) {
         el.style.display = 'none'
       })
       toggleButton.textContent = 'Показать всё'
+      toggleButton.classList.remove('read-more--close')
       isElementVisible = false
     } else {
       lastThreeContainers.forEach((el) => {
         el.style.display = 'block'
       })
       toggleButton.textContent = 'Скрыть'
+      toggleButton.classList.add('read-more--close')
       isElementVisible = true
     }
   })
@@ -49,16 +54,11 @@ const swiper = new Swiper('.mySwiper', {
   direction: 'horizontal',
   loop: true,
   speed: 500,
-  effect: 'slider',
+
   // initialSlide: 2, // Начинаем со 2 слайдера
   // freeMode: true, // можно перетаскивать как ленту
-  slidesPerView: 2,
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 3,
-    },
-  },
+  slidesPerView: 'auto',
+
   // кол-во активных слайдов
   // centeredSlides: true, // центрирование слайдов
 
